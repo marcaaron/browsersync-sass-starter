@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-   "scripts": {
+  "scripts": {
     "sass": "node-sass --watch ./styles/scss -o ./styles/css",
     "start": "run-script-os",
     "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\"",
@@ -13,10 +13,10 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "run-script-os": "^1.0.3"
-  },
   "devDependencies": {
+    "browser-sync": "^2.24.5",
     "concurrently": "^3.6.0",
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.9.0",
+    "run-script-os": "^1.0.3"
   }
+}
